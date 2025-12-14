@@ -17,7 +17,7 @@ public class Question4 {
             int oCount = countMoves(board, 'O');
 
             if (xCount == oCount || xCount == oCount + 1) {
-                // 3. 如果棋局有效，调用 checkWinner 判断赢家
+               
                 char winner = checkWinner(board);
 
                 if (winner != '.') {
@@ -32,7 +32,7 @@ public class Question4 {
 
 
         public static char checkWinner(char[][] board) {
-            // A. 检查行 (Rows)
+            
             for (int i = 0; i < 3; i++) {
                 if (board[i][0] != '.' && board[i][0] == board[i][1] && board[i][1] == board[i][2]) {
                     return board[i][0];
