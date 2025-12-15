@@ -40,7 +40,6 @@ import java.util.Scanner;
             for (int i = 0; i < s.length(); i++) {
                 count++;
 
-
                 if (i == s.length() - 1 || s.charAt(i) != s.charAt(i + 1)) {
                     sb.append(count);
                     sb.append(s.charAt(i));
